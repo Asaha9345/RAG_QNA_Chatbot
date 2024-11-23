@@ -12,6 +12,8 @@ import os
 import re
 import tempfile
 
+# Streamlit UI: Title for the application
+st.title("RAG Application")
 
 # Function to clean text by removing unwanted characters and extra spaces
 def clean_text(text):
@@ -25,8 +27,6 @@ st.sidebar.text("Please enter the information\nto start the application.")
 huggingface_id=st.sidebar.text_input("Enter your Huggingface API Key",type='password')
 groq_id=st.sidebar.text_input("Enter your Groq API Key",type='password')
 if huggingface_id and groq_id:
-    # Streamlit UI: Title for the application
-    st.title("RAG Application")
     document=st.file_uploader("Please choose a pdf file to start your Q&A",type='pdf')
     if document is not None:
         st.write("Your document is being prepared..")
