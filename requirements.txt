@@ -3,7 +3,7 @@ python-dotenv
 langchain
 langchain-huggingface
 langchain-groq
-PyPDF2
+PyPDF
 faiss-cpu
 transformers
 langchain-community
