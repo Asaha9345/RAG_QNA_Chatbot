@@ -83,5 +83,5 @@ if huggingface_id and groq_id:
             finally:
                 # Ensure the temporary file is deleted after processing is completed
                 os.remove(temp_file_path)
-    except AuthenticationError:
+    except:
         st.error("Please enter the API key correctly")
