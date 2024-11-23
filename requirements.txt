@@ -6,3 +6,4 @@ langchain-groq
 PyPDF2
 faiss-cpu
 transformers
+langchain-community
